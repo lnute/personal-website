@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styling.css">
 
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="scripts.js"></script>
+    </head>
+    <body onload="startTime()">
+
+        <!-- irrelevent -->
+        <div id="hidden">
+            <p>hidden</p>
+        </div>
+
+
+
+
+
+        <!-- desktop icons -->
+        <div id="resume">
+            <i class="glyphicon glyphicon-file" style="font-size:25px;" onclick="open_window('resume_window')"></i>
+            <p>resume.pdf</p>
+        </div>
+
+        <div id="oit">
+            <i class="glyphicon glyphicon-folder-open" style="font-size:25px;"></i>
+            <p>work experience</p>
+        </div>
+
+        <div id="projects">
+            <i class="glyphicon glyphicon-folder-open" style="font-size:25px;"></i>
+            <p>projects</p>
+        </div>
+        <!-- need intro.txt -->
+
+
+
+
+
+        <!-- windows -->
+        <div id="text_editor">
+            <i class="glyphicon glyphicon-remove-sign" id="remove" onclick="close_window('text_editor');"></i>
+            <br>
+            <textarea>todo : edit this</textarea>
+        </div>
+
+        <div id="resume_window">
+            <i class="glyphicon glyphicon-remove-sign" id="remove" onclick="close_window('resume_window');"></i>
+            <embed src="Fall2020.pdf"/>
+        </div>
+        <!-- need settings, work experience folder, projects folder, working terminal if i'm bored-->
+
+
+
+
+
+        <!-- work experience -->
+        <!-- need oit pdf -->
+
+
+
+
+        <!-- projects -->
+        <div id="ramblin">
+            <i class="glyphicon glyphicon-remove-sign" id="remove" onclick="close_window('ramblin');"></i>
+            <object type="text/html" data="https://lnute.github.io/Ramblin-Cup/"></object>
+        </div>
+        <!-- need more projects -->
+
+
+
+
+
+        <!-- bottom bar -->
+        <div id="bottombar">
+            <i class="glyphicon glyphicon-log-out" id=bar_icon onclick="window.close()"></i>
+            <i class="glyphicon glyphicon-cog" id=bar_icon onclick="open_window('settings_window');"></i>
+            <span id=time style="float:right; padding: 5px;"></span>
+        </div>
+        <!-- need to fix exit button, maybe include terminal -->
+
+    </body>
+</html>
